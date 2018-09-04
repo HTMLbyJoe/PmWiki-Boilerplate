@@ -5,3 +5,11 @@
 h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
+
+#wikitext .createlinktext {
+    color: #ba0000;
+}
+
+#wikitext .createlinktext:visited {
+    color: #a55858;
+}
