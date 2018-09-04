@@ -1,3 +1,16 @@
+#header #article-talk-selector {
+    display: none;
+}
+
+#header > ul:nth-child(3) {
+    /* Right-side tabs (View, Edit, History, etc) */
+    padding-left: 0;
+}
+
+#header .print {
+    display: none;
+}
+
 .frame {
     box-sizing: content-box;
 }
