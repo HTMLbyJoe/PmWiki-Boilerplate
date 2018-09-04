@@ -24,11 +24,13 @@ $EnablePathInfo = 1;
 ## $PageLogoUrl is the URL for a logo image -- you can change this
 ## to your own logo if you wish.
 # $PageLogoUrl = "$PubDirUrl/skins/pmwiki/pmwiki-32.gif";
+$PageLogoUrl = "$PubDirUrl/logos/site-logo-135x135.png";
+$PageLogoAltUrl = "$PubDirUrl/logos/site-logo-95x45.png";
 
 ## If you want to have a custom skin, then set $Skin to the name
 ## of the directory (in pub/skins/) that contains your skin files.
 ## See PmWiki.Skins and Cookbook.Skins.
-$Skin = 'pmwiki-responsive';
+$Skin = 'vector';
 
 ## You'll probably want to set an administrative password that you
 ## can use to get into password-protected pages.  Also, by default

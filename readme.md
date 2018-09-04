@@ -23,8 +23,13 @@ Some boilerplate config stuff for a new [PmWiki](https://www.pmwiki.org) install
     # Copy the contents of the boilerplate to the web root
     cp -r pmwiki-boilerplate/. .
 
+    # Download the "Vector" skin
+    wget https://www.pmwiki.org/pmwiki/uploads/Skins/vector.zip -O vector.zip
+    unzip vector.zip -d pmwiki/pub/skins/
+    cp pmwiki/pub/skins/vector/Place\ contents\ in\ wiki.d/Site.EditForm pmwiki/wiki.d/
+
     # Delete all this stuff you don't need anymore
-    rm -fr pmwiki.zip readme.md pmwiki-boilerplate pmwiki-boilerplate.zip
+    rm -fr pmwiki.zip vector.zip readme.md pmwiki-boilerplate pmwiki-boilerplate.zip
 
     # Set $WikiTitle and $ScriptUrl in config.php (lines 9 and 13)
     nano pmwiki/local/config.php
