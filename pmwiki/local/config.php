@@ -54,7 +54,8 @@ include_once("scripts/xlpage-utf-8.php");
 
 ##  PmWiki comes with graphical user interface buttons for editing;
 ##  to enable these buttons, set $EnableGUIButtons to 1.
-# $EnableGUIButtons = 1;
+$EnableGUIButtons = 1;
+$GUIButtonDirUrlFmt = '$FarmPubDirUrl/skins/vector/guiedit';
 
 ##  To enable markup syntax from the Creole common wiki markup language
 ##  (http://www.wikicreole.org/), include it here:
