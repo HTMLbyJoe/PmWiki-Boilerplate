@@ -31,14 +31,14 @@ Some boilerplate config stuff for a new [PmWiki](https://www.pmwiki.org) install
     # Delete all this stuff you don't need anymore
     rm -fr pmwiki.zip vector.zip readme.md pmwiki-boilerplate pmwiki-boilerplate.zip
 
-    # Set $WikiTitle and $ScriptUrl in config.php (lines 9 and 13)
+    # Set $WikiTitle and $ScriptUrl in config.php (lines 12 and 16)
     nano pmwiki/local/config.php
 
 
 ### Setting up user accounts
 Go to `https://example.com/?action=crypt` and input a really secure admin password.
 
-Copy the encrypted output and paste it in `$DefaultPasswords['admin']` in `config.php` (line 168)
+Copy the encrypted output and paste it in `$DefaultPasswords['admin']` in `config.php` (line 175)
 
 Log in using new admin password: `https://example.com/?action=login`
 
