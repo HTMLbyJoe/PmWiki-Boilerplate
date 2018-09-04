@@ -10,8 +10,8 @@ $WikiTitle = 'PmWiki';
 
 ##  $ScriptUrl is your preferred URL for accessing wiki pages
 ##  $PubDirUrl is the URL for the pub directory.
-# $ScriptUrl = 'http://www.mydomain.com/path/to/pmwiki.php';
-# $PubDirUrl = 'http://www.mydomain.com/path/to/pub';
+$ScriptUrl = 'https://example.com';
+$PubDirUrl = "$ScriptUrl/pmwiki/pub";
 
 ##  If you want to use URLs of the form .../pmwiki.php/Group/PageName
 ##  instead of .../pmwiki.php?p=Group.PageName, try setting
@@ -19,7 +19,7 @@ $WikiTitle = 'PmWiki';
 ##  it depends on your webserver and PHP configuration.  You might also
 ##  want to check http://www.pmwiki.org/wiki/Cookbook/CleanUrls more
 ##  details about this setting and other ways to create nicer-looking urls.
-# $EnablePathInfo = 1;
+$EnablePathInfo = 1;
 
 ## $PageLogoUrl is the URL for a logo image -- you can change this
 ## to your own logo if you wish.
@@ -28,7 +28,7 @@ $WikiTitle = 'PmWiki';
 ## If you want to have a custom skin, then set $Skin to the name
 ## of the directory (in pub/skins/) that contains your skin files.
 ## See PmWiki.Skins and Cookbook.Skins.
-# $Skin = 'pmwiki-responsive';
+$Skin = 'pmwiki-responsive';
 
 ## You'll probably want to set an administrative password that you
 ## can use to get into password-protected pages.  Also, by default
@@ -159,3 +159,10 @@ include_once("scripts/xlpage-utf-8.php");
 # $GUIButtons['table'] = array(600,
 #                       '||border=1 width=80%\\n||!Hdr ||!Hdr ||!Hdr ||\\n||     ||     ||     ||\\n||     ||     ||     ||\\n', '', '',
 #                     '$GUIButtonDirUrlFmt/table.gif"$[Table]"');
+
+##  Permissions
+# Only allow logged in users to edit
+$DefaultPasswords['edit'] = 'id:*';
+
+##  Receipes
+include_once("$FarmD/cookbook/GetRidOfMain.php");
