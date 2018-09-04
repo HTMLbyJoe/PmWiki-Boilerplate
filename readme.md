@@ -3,6 +3,14 @@ HTMLbyJoe's PmWiki Boilerplate
 
 Some boilerplate config stuff for a new [PmWiki](https://www.pmwiki.org) installation
 
+* Configure auth using .htpasswd file
+* Disable anonymous editing
+* Set timezone to New York
+* Allow uploading of files for logged-in users, increase file size limit
+* Enable clean URLs
+* Get rid of "Main" from URLs
+* Send HSTS header
+* Install responsive "Vector" theme along with various CSS fixes
 
 ### Usage
 
