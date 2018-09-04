@@ -5,6 +5,9 @@
 ##  for more details on the types of customizations that can be added
 ##  to PmWiki.
 
+## The timezone to use when displaying dates
+date_default_timezone_set('America/New_York');
+
 ##  $WikiTitle is the name that appears in the browser's title bar.
 $WikiTitle = 'PmWiki';
 
