@@ -164,5 +164,15 @@ include_once("scripts/xlpage-utf-8.php");
 # Only allow logged in users to edit
 $DefaultPasswords['edit'] = 'id:*';
 
+# Set the admin password
+$DefaultPasswords['admin'] = '*';
+
+# Login names/passwords get saved here
+$AuthUser['htpasswd'] = 'local/.htpasswd';
+
+##  Additional Scripts
+require_once("$FarmD/scripts/authuser.php");
+
 ##  Receipes
-include_once("$FarmD/cookbook/GetRidOfMain.php");
+require_once("$FarmD/cookbook/GetRidOfMain.php");
+require_once("$FarmD/cookbook/htpasswdform.php");
